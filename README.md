@@ -60,6 +60,8 @@ we have very few elements.
 * I went with Flexbox approach, as I felt it matched most of the requirements wihtout many cons.
 * Too ensure it works for IE 9 also, I added some JS which is IE 9 only but will not be loaded for other browsers.
 * So, my final solution is : Pure CSS for IE10 and above and other browsers and a small JS for IE 9 only.
+* Note: I realize this may be more complicated than just using JS for both cases, I have done this mainly to get as close to
+ the instructions as possible
 
 ## Part 2
 Load the content via javascript request

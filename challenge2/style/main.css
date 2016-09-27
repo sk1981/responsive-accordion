@@ -1,0 +1,60 @@
+.accordion-title {
+    padding: 10px;
+    background: #eee;
+    display: block;
+    margin-bottom: 2px;
+    margin-right: 1px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.accordion-radio:checked + .accordion-title {
+    background: #fcfcfc;
+    color: #aaa;
+}
+
+/* by default don't display radio, as we will use label for checking the radio */
+.accordion-radio {
+    display: none;
+}
+
+/* By default don't display any content */
+.accordion-content {
+    display: none;
+    width: 100%;
+}
+
+.accordion-radio:checked + label + .accordion-content {
+    /* So that any content following checked radio and label is displayed */
+    display: block;
+}
+
+/**
+ * For large screens
+ * Prefixes generated statically using autoprefixer, which should ideally be part of build
+ */
+@media screen and (min-width: 768px) {
+    /** for browsers with flex support */
+    .accordion {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        /* Wrap so that content can appear on next line */
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        /* So that the title element takes only the required width and not the full width */
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .accordion-title {
+        /* Give negative order so that title is on top */
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+}

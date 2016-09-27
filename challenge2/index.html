@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Responsive Accordion 1</title>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <!--[if IE 9]>
+  <link rel="stylesheet" type="text/css" href="style/fallback-ie9.css">
+  <![endif]-->
+</head>
+<link rel="css">
+<body>
+<main>
+  <div class="accordion">
+    <input id="option1" class="accordion-radio" name="accordion-choice" type="radio"/>
+    <label class="accordion-title" for="option1">Option 1</label>
+    <input id="option2" class="accordion-radio" name="accordion-choice" type="radio"/>
+    <label class="accordion-title" for="option2">Option 2</label>
+    <input id="option3" class="accordion-radio" name="accordion-choice" type="radio"/>
+    <label class="accordion-title" for="option3">Option Three Long Title</label>
+  </div>
+</main>
+<script src="./src/contentFetcher.js"></script>
+<script src="./src/contentLoader.js"></script>
+
+<!-- Ideally, instead of loading this file just for IE 9 , I would use feature detection using modernizr
+custom build and then dynamically load the required files.  -->
+<!--[if IE 9]>
+<script src="./src/fallbackIE9.js"></script>
+<![endif]-->
+</body>
+</html>

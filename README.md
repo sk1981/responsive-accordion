@@ -3,6 +3,7 @@
 ## Notes
 * As this was more about implementation, I am not following practices like minifying, concatenating, using SASS,
  using module loader, using auotprefixer and so on to keep the build simple.
+* As I am not using using any build time tool, I will be creating the widget only using ES 5 semantics.
 * I am using pure javascript which is supported in all the given browsers instead of loading a library like jQuery
 
 ## Part 1
@@ -60,3 +61,14 @@ we have very few elements.
 * Too ensure it works for IE 9 also, I added some JS which is IE 9 only but will not be loaded for other browsers.
 * So, my final solution is : Pure CSS for IE10 and above and other browsers and a small JS for IE 9 only.
 
+## Part 2
+Load the content via javascript request
+
+### Link
+Code is accessible at under the challenge2 folder
+Demo url is at :
+
+### Approaches considered
+##### Pure Javascript
+* As the requirements were simple, used pure javascript to keep the file size minimal.
+* Used module pattern to divide javascript code.

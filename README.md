@@ -11,7 +11,7 @@ Implement an accordion component which transforms to tabs for wider sc
 
 ### Link
 Code is accessible at under the challenge1 folder
-Demo url is at :
+Demo url is at : https://sk1981.github.io/responsive-accordion/challenge1
 
 ### Approaches considered
 #### Managing state with CSS
@@ -66,9 +66,12 @@ Load the content via javascript request
 
 ### Link
 Code is accessible at under the challenge2 folder
-Demo url is at :
+Demo url is at : https://sk1981.github.io/responsive-accordion/challenge2/
 
 ### Approaches considered
 ##### Pure Javascript
 * As the requirements were simple, used pure javascript to keep the file size minimal.
 * Used module pattern to divide javascript code.
+
+##### UX
+* Didn't do anything special for UX but ideally we should show a animation icon while the data is loading.
